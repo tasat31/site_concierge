@@ -1,0 +1,27 @@
+@keyframes flip {
+  0%  { transform: rotateY(0deg);}
+  50% { transform: rotateY(360deg);}
+  75% { transform: scale(1.2, 1.2);}
+  100% {  transform: scale(1.0, 1.0);}
+}
+
+.site-concierge a {
+  position: fixed;
+  right: 50px;
+  border-radius: 45px 45px 45px 45px;
+}
+
+.site-concierge a:hover {
+  animation: flip 2s linear;
+}
+
+.site-concierge-image {
+  bottom: 50px;
+  z-index: 30;
+}
+
+.site-concierge-image a {
+  position: relative;
+  opacity: 0.8;
+}
+
